@@ -1,0 +1,36 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+
+  &:hover {
+    background-color: #a8a8a8;
+  }
+}
+
+@mixin flexbox-row-center {
+  @apply flex flex-row items-center;
+}
+
+.cate-menu {
+  @include flexbox-row-center;
+  @apply w-full h-[60px] bg-cate-white text-2xl text-cate-primary px-[10px];
+
+  .cate-avatar {
+    @apply w-[40px] h-[40px] rounded-full absolute right-[10px];
+  }
+}
+
