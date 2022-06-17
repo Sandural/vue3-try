@@ -17,15 +17,21 @@ module.exports = {
       },
     },
     extend: {
+      dropShadow: {
+        'cate-sm': "0 1px 1px rgb(0 0 0 / 38%)"
+      },
       keyframes: {
         shrinkSideBtn: {
           "0%": { width: "184px" },
           "100%": { width: "40px" },
         },
       },
-      animation: {
-        shrinkSideBtn: "shrinkSideBtn 2s",
-      },
+      transitionProperty: {
+        'width': 'width',
+      }
+      // animation: {
+      //   shrinkSideBtn: "shrinkSideBtn 2s",
+      // },
     },
   },
   plugins: [],
