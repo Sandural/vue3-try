@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
   theme: {
     colors: {
       cate: {
         primary: "rgb(99 125 228)",
+        primaryBg: "rgba(99,125,228,0.1)",
         success: "#67c23a",
         warning: "#e6a23c",
+        warningBg: "rgba(230, 162, 60, 0.1)",
         danger: "#f56c6c",
         error: "#f56c6c",
         info: "#909399",

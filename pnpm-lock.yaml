@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.0.0
+  '@vicons/ionicons4': ^0.12.0
   '@vicons/tabler': ^0.12.0
   '@vicons/utils': ^0.1.4
   '@vitejs/plugin-vue': ^2.3.3
@@ -25,6 +26,7 @@ dependencies:
 
 devDependencies:
   '@types/node': registry.npmmirror.com/@types/node/18.0.0
+  '@vicons/ionicons4': registry.npmmirror.com/@vicons/ionicons4/0.12.0
   '@vicons/tabler': registry.npmmirror.com/@vicons/tabler/0.12.0
   '@vicons/utils': registry.npmmirror.com/@vicons/utils/0.1.4_vue@3.2.37
   '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/2.3.3_vite@2.9.12+vue@3.2.37
@@ -182,6 +184,12 @@ packages:
     resolution: {integrity: sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-18.0.0.tgz}
     name: '@types/node'
     version: 18.0.0
+    dev: true
+
+  registry.npmmirror.com/@vicons/ionicons4/0.12.0:
+    resolution: {integrity: sha512-i+7YwlpCrqD6m9esbZLy1bpVQlh4CKugtS3OzgfNw6BLTQQK6HT7drktaJgcESj/BTr4avdNbAtMQXx56wSVMg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vicons/ionicons4/-/ionicons4-0.12.0.tgz}
+    name: '@vicons/ionicons4'
+    version: 0.12.0
     dev: true
 
   registry.npmmirror.com/@vicons/tabler/0.12.0:

@@ -25,12 +25,12 @@ body {
   @apply flex flex-row items-center;
 }
 
-.cate-menu {
-  @include flexbox-row-center;
-  @apply w-full h-[60px] bg-cate-white text-2xl text-cate-primary px-[10px];
-
-  .cate-avatar {
-    @apply w-[40px] h-[40px] rounded-full absolute right-[10px];
-  }
-}
+//.cate-menu {
+//  @include flexbox-row-center;
+//  @apply w-full h-[60px] bg-cate-white text-2xl text-cate-primary px-[10px];
+//
+//  .cate-avatar {
+//    @apply w-[40px] h-[40px] rounded-full absolute right-[10px];
+//  }
+//}
 
