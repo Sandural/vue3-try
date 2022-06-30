@@ -2,7 +2,7 @@
   <div class='cate-menu-sidebar'>
     <div v-for='(menu, index) in menuList' :key='menu.key'>
       <div v-if='menu.children?.length'>
-        <div class='cate-menuItem'>
+        <div class='cate-menuItem' @click='activeStyle(index, menu.children.length)'>
           {{ menu.label }}
           <Icon color="#868687" size="16">
             <component
@@ -11,7 +11,9 @@
         </div>
         <Menu :menuList='menu.children'></Menu>
       </div>
-      <div v-else class='cate-subMenuItem' :class='[["core"].includes(menu.key) ? "pl-2" :"pl-4"]'>
+      <div v-else class='cate-subMenuItem'
+           @click='activeStyle(index, menu.children.length)'
+           :class='[["core"].includes(menu.key) ? "pl-2" :"pl-4", index === curMenuState.curIdx && curMenuState.isActive && !curMenuState.hasChildren ? "bg-cate-primaryBg !text-cate-primary font-bold" : ""]'>
         {{ menu.label }}
       </div>
     </div>
